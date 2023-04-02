@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 # open the html doc in read mode and save it as file f
-with open('index.html', 'r') as f:
+with open('practice_ground/index.html', 'r') as f:
     # save the file f as doc, and parse it as an HTML document
     document = BeautifulSoup(f, 'html.parser')
 
