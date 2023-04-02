@@ -10,7 +10,7 @@ my_result = requests.get(url)
 # store the content of the page in my_result.text
 # print(my_result.text)
 
-# use BeautifulSoup 
+# use BeautifulSoup
 my_document = BeautifulSoup(my_result.text, 'html.parser')
 # print the html text, with tags and all
 # print(my_document.prettify())
@@ -27,5 +27,5 @@ print(parent)
 # now search for the parent tag where we see the price
 parent_tag = parent.find('strong')
 print(parent_tag)
-#and to only get the actual number representing the price:
+# and to only get the actual number representing the price:
 print(parent_tag.string)
